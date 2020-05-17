@@ -1,0 +1,6 @@
+/*	Filter that produces lennart 1.0 hz response for data sampled
+	at 100 Hz. Filter was constructed using
+filtutil -i 1  -z 0.0 -p 0.7 4.5  -L 20 -S 11.27 6.59 -A 50
+	Einar Kjartansson, nov 1997.
+*/
+	double lenn1[7]={2, 2, 1, -2, 1, 1.90815290523522, -0.912025 } ;
